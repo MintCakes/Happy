@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>立冬快乐 - 互动网页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 粒子背景容器 -->
+    <div id="particle-container"></div>
+    
+    <!-- 背景音乐 -->
+    <audio id="background-music" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2023/12/03/audio_ce8c858375.mp3?filename=soft-piano-121961.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素
+    </audio>
+    
+    <!-- 音乐控制按钮 -->
+    <button id="music-control" class="music-btn">🔊 播放音乐</button>
+    
+    <!-- 主页面内容 -->
+    <div class="container">
+        <h1>点击下方按钮，迎接立冬的祝福风暴！</h1>
+        <button id="show-winter-popup" class="btn-primary">🎉立冬快乐🎉</button>
+        
+        <!-- 互动元素 -->
+        <div class="interaction-area">
+            <p>点击屏幕体验酷炫粒子效果</p>
+            <p class="hint">提示：点击按钮将弹出100个祝福窗口！</p>
+        </div>
+    </div>
+    
+    <!-- 弹窗容器 -->
+    <div id="popups-container"></div>
+    
+    <!-- 清除所有弹窗按钮 -->
+    <button id="clear-all-popups" class="clear-btn hidden">清除所有祝福</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
